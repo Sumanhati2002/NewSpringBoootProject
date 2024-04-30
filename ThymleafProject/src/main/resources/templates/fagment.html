@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<p>this is fragment page</p>
+	<!-- going to replace footer -->
+	<!-- <footer th:replace="Footer::footer1">
+		<h1>this fragment.html footer</h1>
+	</footer> -->
+	
+	<!-- going to insert footer -->
+	<footer th:insert="Footer::footer1">
+		<h1>this fragment.html footer</h1>
+	</footer>
+</body>
+</html>

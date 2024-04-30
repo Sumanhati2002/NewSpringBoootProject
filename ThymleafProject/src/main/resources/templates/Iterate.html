@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Tymleaf Loop</title>
+</head>
+<body>
+	<h1>result after traversing.........</h1>
+	<p>names are:<span th:text="${names}"></span></p>
+	<ul>
+		<li th:each="n : ${names}">
+			<span th:text="${n}"></span>
+		</li>
+	</ul>
+</body>
+</html>

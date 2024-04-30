@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" th:href="@{/Base.css}" />
+</head>
+<body>
+	<h1>this is base page heading</h1>
+	<div class="container" th:replace="${content}">
+		<h2>here we are puting dynamic content</h2>
+	</div>
+</body>
+</html>

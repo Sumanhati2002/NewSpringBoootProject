@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Condition</title>
+</head>
+
+<body>
+	<h1>this is conditional statement in thymleaf</h1>
+	<h2 th:style="${isActive} ? 'color:green': 'color: red'"
+		th:text="${isActive} ? 'user is ACTIVE': 'user is NOT ACTIVE'"></h2>
+	<p>checking gender</p>
+	<h1 th:if="${gender}== 'M'">Male</h1>
+	<h1 th:unless="${gender}== 'M'">Female</h1>
+
+</body>
+
+</html>
