@@ -1,5 +1,6 @@
 package com.formvalidation.model;
 
+import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -17,5 +18,6 @@ public class Person {
 	private String name;
 	@NotNull
 	@Min(18)
+	@Max(90)
 	private Integer age;
 }

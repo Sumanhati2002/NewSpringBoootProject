@@ -9,5 +9,6 @@ public class SpringFormValidationApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringFormValidationApplication.class, args);
 	}
-
+	
+	
 }
