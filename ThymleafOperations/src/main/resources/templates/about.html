@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+</head>
+<body>
+	<p>this is about page</p>
+	<div th:replace="index::navfragment"></div>
+
+	<!-- if you use th:replace then whole footer tag should be replaced in place of old footer tag -->
+	<!-- how to use th:replace -->
+	<!-- th:replace="<name of the file where you have mention fragment>::<name of the fragment>" -->
+	<footer th:replace="index::fragmemnt1"></footer>
+</body>
+</html>
